@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/peet_landscape"
+
+
+    android:gravity="center">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/SplashImage"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:src="@drawable/pet_logo"-->
+<!--        android:layout_centerInParent="true" />-->
+<!--    <TextView-->
+<!--        android:id="@+id/SplashWelcome"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Welcome to PetConnect"-->
+<!--        android:textSize="22sp"-->
+<!--        android:textStyle="italic"-->
+<!--        android:textColor="#006296"-->
+<!--        android:fontFamily="cursive"-->
+<!--        android:layout_below="@id/SplashImage"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="16dp" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/SplashLandscape"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="160dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        android:src="@drawable/pet_landscape" />-->
+
+</RelativeLayout>

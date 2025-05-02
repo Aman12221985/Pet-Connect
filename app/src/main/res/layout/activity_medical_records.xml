@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F8F8F8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MedicalRecordsActivity">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet Medical Records"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnUploadRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Medical Record"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Uploaded Records"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#555555"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recordsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+</LinearLayout>

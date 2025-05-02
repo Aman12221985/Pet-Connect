@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_gradient">
+
+    <!-- Top Task Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@android:color/transparent">
+
+        <!-- App Logo and Name -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/pet_logos"
+            android:contentDescription="App Logo"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PETCONNECT"
+            android:textColor="#0B0A0A"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:fontFamily="@font/lobster_regular"
+            android:shadowColor="#55000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1.5"
+            android:letterSpacing="0.05" />
+
+
+        <!-- Profile Icon -->
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_profile"
+            android:contentDescription="Profile Icon"
+            android:layout_gravity="end" />
+
+
+    </LinearLayout>
+
+
+    <!-- Main Content Scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Greeting -->
+            <TextView
+                android:id="@+id/txtWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome!"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/comicrelief_regular"
+                android:layout_gravity="center_horizontal"/>
+
+
+
+            <!-- Row 1 -->
+        <!-- Adopt Pets and Pet Care Tips -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardAdopt"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#FFCC80">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_pets"
+                        android:contentDescription="Adopt Pets" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adopt Pets"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardTips"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#A5D6A7">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_tips"
+                        android:contentDescription="Pet Care Tips" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pet Care Tips"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Row 2 - My Applications and Nearby Shelters -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardApplications"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#90CAF9">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_applications"
+                        android:contentDescription="My Applications" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Applications"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardShelters"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#CE93D8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_location"
+                        android:contentDescription="Nearby Shelters" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nearby Shelters"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <!-- Row 3 - Vaccination Alert and Medical Records -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardVaccination"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#FFD54F">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ic_vaccine"
+                        android:contentDescription="Vaccination" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vaccination Alert"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardMedicalRecords"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#B2EBF2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ic_medical_records"
+                        android:contentDescription="Medical Records" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Medical Records"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

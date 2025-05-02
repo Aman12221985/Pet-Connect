@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_gradient">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/petImageDetail"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_pets"
+            android:contentDescription="Pet Image"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/petNameDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type: "
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/petBreedDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breed: "
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/petAgeDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age: "
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/petLocationDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location: "
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/petPriceDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: "
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/petOwnerContactDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner Contact: "
+            android:textSize="20sp"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnInterested"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I'm Interested"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</ScrollView>

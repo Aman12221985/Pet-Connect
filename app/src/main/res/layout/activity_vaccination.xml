@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/main_gradient">
+
+    <TextView
+        android:id="@+id/selectedDateTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select date and time for vaccination"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_marginBottom="16dp" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnSetReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Vaccination Reminder"
+        android:textAllCaps="false"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
