@@ -61,6 +61,12 @@
         <activity android:name=".EditProfileActivity" />
         <activity android:name=".AddPetActivity"/>
         <activity android:name=".EditPetActivity"/>
+        <activity
+            android:name=".ChatActivity"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+
+
 
 
 

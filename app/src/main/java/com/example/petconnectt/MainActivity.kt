@@ -54,6 +54,10 @@ class MainActivity : AppCompatActivity() {
         findViewById<ImageView>(R.id.imgProfile).setOnClickListener {
             startActivity(Intent(this, ProfileActivity::class.java))
         }
+
+        findViewById<CardView>(R.id.cardChat).setOnClickListener {
+            startActivity(Intent(this, ChatActivity::class.java))
+        }
     }
 
     override fun onResume() {

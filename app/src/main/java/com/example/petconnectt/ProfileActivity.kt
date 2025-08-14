@@ -57,5 +57,7 @@ class ProfileActivity : AppCompatActivity() {
         super.onResume()
         val user = FirebaseAuth.getInstance().currentUser
         nameText.text = user?.displayName ?: "No name"
+
     }
+
 }
